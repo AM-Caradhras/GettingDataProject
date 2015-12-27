@@ -98,14 +98,14 @@
 
 Step 1: Load the following data sets in R
   
-  *X_test.txt
-  *Y_test.txt
-  *subject_test.txt
-  *X_train.txt
-  *Y_train.txt
-  *subject_train.txt
-  *features.txt
-  *activity_labels.txt
+  * X_test.txt
+  * Y_test.txt
+  * subject_test.txt
+  * X_train.txt
+  * Y_train.txt
+  * subject_train.txt
+  * features.txt
+  * activity_labels.txt
   
   
 
