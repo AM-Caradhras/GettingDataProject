@@ -107,7 +107,24 @@ Step 1: Load the following data sets in R
   * features.txt
   * activity_labels.txt
   
-  
+Step 2: Transform variable names into syntactically valid names
+
+Step 3: Substitute non-descript variable names in main data sets with descriptive variable names
+
+Step 4: Add columns with subjects info and test labels in main data sets
+
+Step 5: Merge the two main data sets -- append the Train data to the Test data set
+
+Step 6: Keep only the measurements on the mean and standard deviation
+
+Step 7: Create a new variable "Activity" in the main data set then populate by using the match function and attach the descriptive activity names in ActLabels to the records
+
+Step 8: Create new tidy data set with the average of each variable for each activity and each subject -- Use data.table package to aggregate main data set by Activity and Subject
+
+Step 9: Sort data by Activity and Subject
+
+Step 10: Save tidy data set as txt file
+
 
 
 
