@@ -24,7 +24,7 @@ names(DataTrainX) <- VarNames
 
 DataTestX <- mutate(DataTestX, Subject = SubTest[,1], TestLabels = DataTestY[,1])
 DataTrainX <- mutate(DataTrainX, Subject = SubTrain[,1], TestLabels = DataTrainY[,1])
-## Add column with subjects info and test labels in main data sets
+## Add columns with subjects info and test labels in main data sets
 
 AllDataX <- rbind(DataTestX,DataTrainX)
 ## Merge the two main data sets -- append the Train data to the Test data set
