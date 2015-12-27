@@ -1,5 +1,6 @@
 ## Coursera: Getting and Cleaning Data Course Project
-## R script to perform teh analysis specified in the assignment
+## R script to perform the analysis specified in the assignment
+## Please note the assignment data should be in the working directory
 
 DataTestX <- read.table("./UCI HAR Dataset/test/X_test.txt", header = TRUE)
 DataTestY <- read.table("./UCI HAR Dataset/test/Y_test.txt", header = TRUE)
