@@ -115,15 +115,15 @@ Step 4: Add two variables in main data sets containing subjects info and test la
 
 Step 5: Merge the two main data sets by appending the Train data to the Test data set with rbind()
 
-Step 6: Keep only the measurements on the mean and standard deviation
+Step 6: Keep only the measurements on the mean and standard deviation, i.e. keep only the variables which names contain "mean" or "std", along with the variables "Subject" and "TestLabels" -- This is done by combining select() with contains()
 
-Step 7: Create a new variable "Activity" in the main data set then populate by using the match function and attach the descriptive activity names in ActLabels to the records
+Step 7: Create a new variable "Activity" in the main data set that will contain the descriptive activity names. Populate the column by using the match function and attach the names originally contained in activity_labels.txt to the records based on the id numbers in "TestLabels"
 
-Step 8: Create new tidy data set with the average of each variable for each activity and each subject -- Use data.table package to aggregate main data set by Activity and Subject
+Step 8: Create new tidy data set with the average of each variable for each activity and each subject -- Use data.table package to aggregate the main data set by Activity and Subject
 
-Step 9: Sort data by Activity and Subject
+Step 9: Sort the data in the new data set by Activity and Subject
 
-Step 10: Save tidy data set as txt file
+Step 10: Save the new tidy data set as txt file
 
 
 
