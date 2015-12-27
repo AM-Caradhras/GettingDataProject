@@ -94,7 +94,7 @@
 88.	fBodyBodyGyroJerkMag.std..
 
 
-**Work to clean and transform the data
+**Work to clean and transform the data**
 
 Step 1: Load the following data sets in R
   
