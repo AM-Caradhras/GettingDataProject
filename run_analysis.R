@@ -2,16 +2,16 @@
 ## R script to perform the analysis specified in the assignment
 ## Please note the assignment data should be in the working directory
 
-DataTestX <- read.table("./UCI HAR Dataset/test/X_test.txt", header = TRUE)
-DataTestY <- read.table("./UCI HAR Dataset/test/Y_test.txt", header = TRUE)
-SubTest <- read.table("./UCI HAR Dataset/test/subject_test.txt", header = TRUE)
+DataTestX <- read.table("./UCI HAR Dataset/test/X_test.txt")
+DataTestY <- read.table("./UCI HAR Dataset/test/Y_test.txt")
+SubTest <- read.table("./UCI HAR Dataset/test/subject_test.txt")
 ## Import Data from test folder
-DataTrainX <- read.table("./UCI HAR Dataset/train/X_train.txt", header = TRUE)
-DataTrainY <- read.table("./UCI HAR Dataset/train/Y_train.txt", header = TRUE)
-SubTrain <- read.table("./UCI HAR Dataset/train/subject_train.txt", header = TRUE)
+DataTrainX <- read.table("./UCI HAR Dataset/train/X_train.txt")
+DataTrainY <- read.table("./UCI HAR Dataset/train/Y_train.txt")
+SubTrain <- read.table("./UCI HAR Dataset/train/subject_train.txt")
 ## Import Data from trial folder
-VarNamesTemp <- read.table("./UCI HAR Dataset/features.txt", header = TRUE)
-ActLabels <- read.table("./UCI HAR Dataset/activity_labels.txt", header = TRUE)
+VarNamesTemp <- read.table("./UCI HAR Dataset/features.txt")
+ActLabels <- read.table("./UCI HAR Dataset/activity_labels.txt")
 ## Import Data in common, i.e. variable names and activity labels
 
 library(plyr, dplyr, data.table)
